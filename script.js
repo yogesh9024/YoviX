@@ -1,23 +1,39 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
 card.addEventListener("mouseenter", () => {
-card.style.transform = "translateY(-10px) scale(1.03)";
+card.style.transform = "translateY(-10px)";
 });
 
 card.addEventListener("mouseleave", () => {
-card.style.transform = "translateY(0) scale(1)";
+card.style.transform = "translateY(0)";
 });
 });
 
-const form = document.querySelector("form");
+window.addEventListener("scroll", () => {
 
-form.addEventListener("submit", function(e){
-e.preventDefault();
-alert("Thank you! Your message has been received. YoviX will contact you soon.");
-form.reset();
+document.querySelectorAll("section").forEach(section=>{
+
+const top = section.getBoundingClientRect().top;
+
+if(top < window.innerHeight-100){
+section.style.opacity="1";
+section.style.transform="translateY(0)";
+}
+
 });
 
 });
+
+});
+section{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+html{
+scroll-behavior:smooth;
+}
