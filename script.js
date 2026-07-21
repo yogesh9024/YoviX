@@ -74,3 +74,10 @@ cards.forEach(card => {
   card.style.transition = "0.6s";
   observer.observe(card);
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
