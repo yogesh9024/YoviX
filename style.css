@@ -127,3 +127,15 @@ text-align:center;
 padding:30px;
 background:#111827;
 margin-top:50px;
+}
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.nav-links{
+display:none;
+}
+
+}
