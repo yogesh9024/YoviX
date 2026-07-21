@@ -404,3 +404,20 @@ transition:.4s;
 .portfolio-card:hover img{
 transform:scale(1.05);
 }
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#fff;
+text-decoration:none;
+}
+
+.logo i{
+color:#8b5cf6;
+margin-right:8px;
+}
+
+.logo:hover{
+color:#8b5cf6;
+transition:.3s;
+}
