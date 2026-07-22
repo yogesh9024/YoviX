@@ -469,3 +469,41 @@ color:#8b5cf6;
 transform:translateY(-5px);
 }
 
+.contact form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact input,
+.contact textarea{
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+outline:none;
+}
+
+.contact textarea{
+height:150px;
+resize:none;
+}
+
+.contact button{
+padding:15px;
+border:none;
+border-radius:10px;
+background:#8b5cf6;
+color:#fff;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact button:hover{
+transform:scale(1.05);
+background:#6d28d9;
+}
+
