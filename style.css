@@ -516,3 +516,11 @@ transform:scale(1.05);
 background:#6d28d9;
 }
 
+
+.hero-logo{
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
