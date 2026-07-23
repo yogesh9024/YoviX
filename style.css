@@ -417,12 +417,15 @@ transform:scale(1.05);
     align-items:center;
     text-decoration:none;
 }
-   .logo img{
-    height:38px;
+ 
+.logo img{
+    height:35px;
     width:auto;
+    max-width:140px;
+    object-fit:contain;
     display:block;
+    transition:.3s;
 }
-
 
 .logo img:hover{
     transform:scale(1.05);
