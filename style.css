@@ -405,31 +405,23 @@ transition:.4s;
 transform:scale(1.05);
 }
 
-
 .logo{
     display:flex;
     align-items:center;
     text-decoration:none;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    text-decoration:none;
-}
- 
 .logo img{
-    height:19px;
+    height:45px;
     width:auto;
-    max-width:140px;
-    object-fit:contain;
     display:block;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .logo img:hover{
     transform:scale(1.05);
 }
+
 .menu-toggle{
 display:none;
 font-size:28px;
